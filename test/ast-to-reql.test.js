@@ -6,7 +6,7 @@ var reqlQueries = require('./fixtures/reql-queries.js')
 var describe = global.describe
 var it = global.it
 
-describe('ast-to-reql', function() {
+describe('ast-to-reql', function () {
   reqlQueries().forEach(function (reql, i) {
     it('should convert ast-to-reql ' + i, function (done) {
       var ast = reql.build()
@@ -22,5 +22,5 @@ describe('ast-to-reql', function() {
       astToReQL(['b', 'o', 'g', 'u', 's'])
     }).to.throw()
     done()
-  });
+  })
 })

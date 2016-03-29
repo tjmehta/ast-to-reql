@@ -1,6 +1,5 @@
 var createInstance = require('construct')
 var debug = require('debug')('ast-to-reql')
-var exists = require('101/exists')
 var inverse = require('object-loops/inverse')
 var isObject = require('101/is-object')
 var map = require('object-loops/map')
@@ -53,10 +52,6 @@ function astTermToReQL (ast) {
   termOpts = astToReQl(termOpts)
   // get term classes
   var constructArgs = [termOpts].concat(termArgs)
-  return createTerm(termType, constructArgs)
-}
-
-function createTerm (termType, constructArgs) {
   var TermClass = termClasses[termType]
   var TermSuperClass = TermClass.__super__.constructor
   // create reql
