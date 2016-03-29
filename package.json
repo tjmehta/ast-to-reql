@@ -1,6 +1,6 @@
 {
   "name": "ast-to-reql",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Create ReQL from RethinkDB AST",
   "main": "index.js",
   "scripts": {
