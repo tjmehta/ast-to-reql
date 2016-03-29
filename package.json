@@ -30,7 +30,7 @@
   "homepage": "https://github.com/tjmehta/ast-to-reql",
   "dependencies": {
     "101": "^1.5.0",
-    "construct": "github:beatgammit/construct",
+    "construct": "git://github.com/beatgammit/construct",
     "debug": "^2.2.0",
     "object-loops": "^0.7.0",
     "validate-reql": "^0.1.1"
