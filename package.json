@@ -1,0 +1,47 @@
+{
+  "name": "ast-to-reql",
+  "version": "0.0.0",
+  "description": "Create ReQL from RethinkDB AST",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha ./test && istanbul --text check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
+    "test-watch": "nodemon -x mocha ./test",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjmehta/ast-to-reql.git"
+  },
+  "keywords": [
+    "rethinkdb",
+    "ast",
+    "rethink",
+    "reql",
+    "cast",
+    "build",
+    "create",
+    "parse"
+  ],
+  "author": "Tejesh Mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjmehta/ast-to-reql/issues"
+  },
+  "homepage": "https://github.com/tjmehta/ast-to-reql",
+  "dependencies": {
+    "101": "^1.5.0",
+    "construct": "git://github.com/beatgammit/construct",
+    "debug": "^2.2.0",
+    "object-loops": "^0.7.0",
+    "validate-reql": "^0.1.1"
+  },
+  "peerDependencies": {
+    "rethinkdb": "^2.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "rethinkdb": "^2.2.3"
+  }
+}
