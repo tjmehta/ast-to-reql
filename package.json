@@ -33,7 +33,7 @@
     "construct": "git://github.com/beatgammit/construct#4d835482c202f18fa296399f85e68a69de72e6eb",
     "debug": "^2.2.0",
     "object-loops": "^0.7.0",
-    "validate-reql": "^0.1.1"
+    "validate-reql": "^0.2.0"
   },
   "peerDependencies": {
     "rethinkdb": "^2.2.2"
