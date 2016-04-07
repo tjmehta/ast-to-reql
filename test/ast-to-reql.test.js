@@ -8,7 +8,7 @@ var it = global.it
 
 describe('ast-to-reql', function () {
   reqlQueries().forEach(function (reql, i) {
-    it('should convert ast-to-reql ' + i, function (done) {
+    it('should convert ast-to-reql "' + reql.toString() + '"', function (done) {
       var ast = reql.build()
       var reql2 = astToReQL(ast)
       expect(reql2.build()).to.deep.equal(ast)
